@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 41: 
+        //Evaluate various combinations of logical operators (&&, ||, !).
+            //&&
+               console.log(true&&false);//false
+               console.log(true&&true);//true
+               console.log(false&&false);//false
+               console.log(false&&true);//false
+               console.log((3<4)&& (5<4));//false
+            //||
+            console.log(true||false);//true
+               console.log(true||true);//true
+               console.log(false||false);//false
+               console.log(false||true);//true
+               console.log((3<4)|| (5<4));//true
+            //!
+            console.log(!true);//false
+            console.log(!false);//true
+            console.log(!(3<4));//false
+        //task 42
+        // Use logical operators to write a condition that checks if a number is in a given range.
+            let a=+prompt("enter the starting range:");
+            let b=+prompt("Enter the ending range:");
+            let c=+prompt("Enter the number");
+            if((a<=c) && (c<=b)){
+                console.log(c+" is present in range from "+a+" to "+b);
+            }else{
+                console.log(c+" is not present in range from "+a+" to "+b);
+            }
+        //tack 43
+        // Use the NOT (!) operator to invert a boolean value. 
+        var w=false;
+        console.log(!w);//true
+        // Task 44: 
+        //Evaluate the short-circuiting nature of logical operators. 
+       /*
+       The short-circuiting nature of logical operators in programming is an essential concept that helps optimize code execution and avoid unnecessary operations. Logical operators, such as AND (&&) and OR (||), exhibit short-circuit behavior, which means that they evaluate expressions from left to right and stop as soon as the result is determined.
+       */
+      //Task 45: 
+      //Compare two non-boolean values using logical operators and observe the result. 
+            console.log(35 && 0);//0
+            console.log("" && "Hello");//""
+            console.log(null && 35);//null
+            console.log(67 && 56);//56
+            console.log(undefined && 0);//undefined
+    </script>
+</body>
+</html>

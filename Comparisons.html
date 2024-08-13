@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 31: 
+        //Compare two numbers using relational operators (>, <, >=, <=). 
+        let a=+prompt("enter the value of a:");
+        let b=+prompt("enter the value of b:");
+        console.log("a:"+a);//56
+        console.log("b:"+b);//89
+        console.log("a>b:"+(a>b));//false
+        console.log("a<b:"+(a<b));//true
+        console.log("a>=b:"+(a>=b));//false
+        console.log("a<=b:"+(a<=b));//true
+        //Task 32: 
+        //Use equality () and strict equality (=) operators to compare different data types and note the differences. 
+       var s=234;
+       var d="234";
+       console.log("s:"+s);//234
+       console.log("d:"+d);//234
+       console.log("s==d:"+(s==d))//true
+       //return true.convert string to number and compare them.(123==123(true))
+       //it ignore the data type
+       console.log("s===d:"+(s===d));//false
+       // return false.because of its compare the value and datatype
+       //there is no type convertion so return false
+       // Task 33: 
+       //Compare two strings lexicographically.
+       var s="Hello";
+       var d="welcome";
+       console.log("s:"+s)//hello
+       console.log("d:"+d)//welcome
+       //string compare based on the dictionary occur
+       console.log("s>d:"+s>d);//return false
+       console.log("s<d:"+(s<d))//return true 
+       console.log("s==d:"+(s==d))//return false
+       //Task 34: 
+       //Use the inequality (!=) and strict inequality (!==) operators to compare values.
+       let v=123;
+       let w=123;
+       console.log("w:"+w)//123
+       console.log("v:"+v)//123
+       console.log("w!=v:"+w!=v)//return true
+       console.log("w!==v:"+w!==v)//return true
+      // Task 35: 
+      //Compare null and undefined using both == and ===.
+      let e=null;
+      let q;
+      console.log("e:"+e)//return null
+       console.log("q:"+q)//return undefined
+       console.log("e==q:"+(e==q))//return true
+       console.log("e===q:"+(e===q))//return false
+    </script>
+</body>
+</html>

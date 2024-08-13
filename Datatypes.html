@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 21: 
+        //Create variables of different data types (e.g., string, number, boolean,null, undefined, object). 
+        let id=123;
+        let Name="Naresh kumar S";
+        let isAdmin=true;
+        let phoneno=12345678098n;
+        let a=null;
+        let b;
+        let user={};
+        user.id=id;
+        user.name=Name;
+        user.isAdmin=isAdmin;
+        user.phoneno=phoneno;
+        //Task 22: 
+        //Use the typeof operator to determine the type of various variables. 
+        console.log(id+":"+typeof(id));
+        console.log(Name+":"+typeof(Name));
+        console.log(isAdmin+":"+typeof(isAdmin));
+        console.log(phoneno+":"+typeof(phoneno));
+        console.log(""+a+":"+typeof(a));//null is consider as object
+        console.log(""+b+":"+typeof(b));
+        console.log(user+":"+typeof(user));
+        //Task 23:
+        // Declare a symbol and print its type.
+        let s=Symbol("id");       
+        console.log("id:"+typeof(s));
+        //Task 24:
+        // Assign the value null to a variable and check its type using typeof. 
+        let w=null;
+        console.log(""+w+":"+typeof(w));
+        //Task 25: 
+        //Differentiate between declaring a variable using var and let in terms of scope. 
+        /*var 
+        var variable is used in anywhere in code
+        if var variable is defined in block of code ,we can use a that variable outside a block
+        we can recreate var variable with same name 
+        */
+       /*let 
+        let variable is used in block of code
+        if let variable is defined in block of code ,we cannot use a that variable outside a block
+        we cannot recreate let variable with same name 
+        */
+    </script>
+</body>
+</html>

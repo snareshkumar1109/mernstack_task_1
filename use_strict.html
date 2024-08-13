@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task-11
+        //Write a script without using “use strict” and try to assign a value to an undeclared variable. Note the result.
+        a=234
+        alert(a)
+    
+       //its output is display value of a in alert box
+       //task-12
+       //Enable “use strict” mode and repeat the above action, noting the difference
+       /* "use strict"
+        a=345
+        alert(a)
+        */
+        //its output is reference error
+        //diffence is 
+        //11 code is executed successfully
+        //12 code is give a reference error 
+        //task-13
+       /*
+        // In “use strict” mode, try to delete a variable, function, or function parameter
+        //1)to delete a variable
+        let s = 42;
+        delete s; 
+        //2)to delete a function
+        function myFunction() {
+          return "Hello!";
+          }
+        delete myFunction;
+        //3)to delete a function parameter
+        function myFunction(param) {
+        delete param; 
+        } 
+       // 1,2 and 3 code result is sytax error
+     */
+    //task-14
+    //Assign a value to an undeclared variable without “use strict” and then with “use strict”.
+    let c=13
+    "use strict"
+    alert(c)
+    //its result is display a value of c
+    //not give a error
+    //task-15
+    //Declare a variable with a reserved keyword in “use strict” mode
+    /*"use strict"
+    let class=123;
+    console.log(class)
+    */
+    //its result is syntax error:unexpect token class
+    </script>
+</body>
+</html>

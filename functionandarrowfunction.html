@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 46: 
+        //Write a function that takes two numbers as arguments and returns their sum.
+        function sum(a,b){
+           return a+b;
+        }
+        alert(sum(59,34));//output:93
+        //Task 47: 
+        //Create a function that calculates the area of a rectangle. 
+        function areaofrectangle(l,b){
+             return l*b
+        }//calculate the area of rectangle
+        var length=4;
+        var breath=3;
+        console.log(areaofrectangle(length,breath))//output:12
+        //Task 48: 
+        //Declare a function without parameters and call it. 
+        function say(){
+            alert("Hello");
+        }
+        say()
+        //Task 49: 
+        //Write a function that returns nothing and observe the default return value.
+        function sH(){
+            return;
+        }
+        console.log(sH())//undefined
+        //Task 50:
+        // Declare a function with default parameters and call it with different arguments
+        function sayHi(){
+            console.log("Hello");
+        }
+        sayHi(3,5);
+        /*
+        Task 51: 
+        Declare a simple arrow function named greet that takes one 
+        parameter name and returns the string “Hello, name!”. Test your function with 
+         various names
+        */
+       var a=(name)=>{
+           return `Hello, ${name}!`
+       }
+       var b=a("Naresh kumar");
+       console.log(b);
+       /*
+        Task 52: 
+        Write an arrow function named add that takes two parameters and 
+returns their sum. Validate your function with several pairs of numbers.
+       */
+      var a=(number1,number2)=>{
+        return number1+number2
+      }
+      console.log(a(5,2));//output:7
+      console.log(a(15,4));//output:19
+      console.log(a(10,2));//output:12
+      console.log(a(3,4));//output:7
+      /*
+      Task 53: 
+      Declare an arrow function named isEven that checks if a number is even. 
+If the number is even, it should return true; otherwise, false. Remember that if 
+the arrow function body has a single statement, you can omit the curly braces
+      */
+     var isEven=(number)=>number%2==0;
+     console.log(isEven(6));//output:true
+     console.log(isEven(7));//output:false
+     /*
+     Task 54: 
+     Implement an arrow function named maxValue that takes two numbers 
+as parameters and returns the larger number. Here, you'll need to use curly 
+braces for the function body and the return statement.
+     */
+    var maxValue=(a,b)=>{
+        return (a<b)?b:a
+    }
+    console.log(maxValue(67,78))//output:78
+    console.log(maxValue(57,48))//output:57
+    /*
+    Task 55:
+     Examine the behavior of the this keyword inside an arrow function vs a 
+traditional function. Create an object named myObject with a property value set 
+to 10 and two methods: multiplyTraditional using a traditional function and
+multiplyArrow using an arrow function. Both methods should attempt to 
+multiply the value property by a number passed as a parameter. Check the value 
+of this inside both methods
+    */
+    let myObject={
+        value:10,
+        multiplyTraditional:function(number){
+            this.value=number*this.value
+        },
+        multiplyArrow:(number)=>{
+                 this.value=number*this.value
+            }
+        };
+    
+    console.log(myObject.value);//output:10
+    myObject.multiplyTraditional(3);
+    console.log(myObject.value);//output:30
+    myObject.multiplyArrow(5);
+    console.log(myObject.value);//Output:NaN
+    </script>
+</body>
+</html>
